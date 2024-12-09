@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/subscribe-success.css" />
+    <title>Subscribe Success</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <section class="container-success">
+          <section>
+            <img src="../assets/images/icon-success.svg" alt="" />
+          </section>
+          <section class="container-message-subscribing">
+            <h2>Thanks for subscribing!</h2>
+          </section>
+          <section class="container-email-sending">
+            <p>
+              A confirmation email has been sent to
+              <span class="email-test">testemail_@hotmail.com.</span> Please
+              open it and click the button inside to confirm your subscription.
+            </p>
+          </section>
+          <section class="container-dismiss-sec">
+            <button type="button" class="container-dismiss-button">
+              Dismiss message
+            </button>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script>
+      // Recupera o e-mail do localStorage e exibe
+      const email = localStorage.getItem("subscribedEmail");
+      if (email) {
+        document.getElementById("email-display").textContent = email;
+      }
+    </script>
+  </body>
+</html>
