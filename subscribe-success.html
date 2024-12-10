@@ -11,7 +11,7 @@
       <section>
         <section class="container-success">
           <section>
-            <img src="../assets/images/icon-success.svg" alt="" />
+            <img src="../assets/images/icon-success.svg" alt="icon-success" />
           </section>
           <section class="container-message-subscribing">
             <h2>Thanks for subscribing!</h2>
@@ -19,8 +19,8 @@
           <section class="container-email-sending">
             <p>
               A confirmation email has been sent to
-              <span class="email-test">testemail_@hotmail.com.</span> Please
-              open it and click the button inside to confirm your subscription.
+              <span class="email-test"></span> Please open it and click the
+              button inside to confirm your subscription.
             </p>
           </section>
           <section class="container-dismiss-sec">
@@ -31,12 +31,6 @@
         </section>
       </section>
     </main>
-    <script>
-      // Recupera o e-mail do localStorage e exibe
-      const email = localStorage.getItem("subscribedEmail");
-      if (email) {
-        document.getElementById("email-display").textContent = email;
-      }
-    </script>
+    <script src="subscribe-success.js"></script>
   </body>
 </html>
